@@ -1,90 +1,42 @@
 import SectionTitle from "../../components/common/SectionTitle";
-import { motion } from "framer-motion";
 
-import { ServerCog } from "lucide-react";
+// LOGOS
 
-import {
-    FaJava,
-    FaReact,
-    FaHtml5,
-    FaCss3Alt,
-    FaJs,
-    FaDatabase,
-} from "react-icons/fa";
+import javaLogo from "../../assets/logo/java.png";
+import springMvcLogo from "../../assets/logo/spring-mvc.png";
+import springBootLogo from "../../assets/logo/spring-boot.png";
+import springSecurityLogo from "../../assets/logo/spring-security.jpg";
+import jwtLogo from "../../assets/logo/jwt.png";
+import microserviceLogo from "../../assets/logo/microservice.png";
+import webLogo from "../../assets/logo/web.jpg";
+import reactLogo from "../../assets/logo/react.png";
+import mernLogo from "../../assets/logo/mern.png";
+import mongoLogo from "../../assets/logo/Mongodb.png";
+import sqlLogo from "../../assets/logo/SQL.png";
+import plsqlLogo from "../../assets/logo/Pl-Sql.png";
+import postgresLogo from "../../assets/logo/postgreSql.png";
+import gitLogo from "../../assets/logo/git.png";
+import githubLogo from "../../assets/logo/github.png";
+import dockerLogo from "../../assets/logo/docker.png";
 
-import {
-    SiSpringboot,
-    SiSpringsecurity,
-} from "react-icons/si";
+const skills = [
 
-const skillsLeft = [
-    {
-        name: "Java",
-        percentage: 95,
-        icon: <FaJava />,
-    },
-
-    {
-        name: "Spring MVC",
-        percentage: 90,
-        icon: <SiSpringboot />,
-    },
-
-    {
-        name: "Spring Boot",
-        percentage: 93,
-        icon: <SiSpringboot />,
-    },
-
-    {
-        name: "Spring Security",
-        percentage: 85,
-        icon: <SiSpringsecurity />,
-    },
-
-    {
-        name: "Microservices",
-        percentage: 85,
-        icon: <ServerCog size={28} />,
-    },
-
-    {
-        name: "SQL",
-        percentage: 90,
-        icon: <FaDatabase />,
-    },
-];
-
-const skillsRight = [
-    {
-        name: "PL/SQL",
-        percentage: 80,
-        icon: <FaDatabase />,
-    },
-
-    {
-        name: "HTML",
-        percentage: 75,
-        icon: <FaHtml5 />,
-    },
-
-    {
-        name: "CSS",
-        percentage: 80,
-        icon: <FaCss3Alt />,
-    },
-
-    {
-        name: "JavaScript",
-        percentage: 85,
-        icon: <FaJs />,
-    },
-
-    {
-        name: "React JS",
-        percentage: 80,
-        icon: <FaReact />,
-    },
+    javaLogo,
+    springMvcLogo,
+    springBootLogo,
+    springSecurityLogo,
+    jwtLogo,
+    microserviceLogo,
+    webLogo,
+    reactLogo,
+    mernLogo,
+    mongoLogo,
+    sqlLogo,
+    plsqlLogo,
+    postgresLogo,
+    gitLogo,
+    githubLogo,
+    dockerLogo,
 ];
 
 function Skills() {
@@ -93,173 +45,153 @@ function Skills() {
 
         <section
             id="skills"
-            className="py-28 px-6 bg-gradient-to-b from-orange-50 via-white to-sky-50 relative overflow-hidden"
+            className="relative py-24 overflow-hidden  bg-gradient-to-b from-orange-50 via-white to-sky-50"
         >
 
-            {/* GLOW EFFECTS */}
+            {/* BACKGROUND GLOW */}
 
-            <div className="absolute top-20 left-10 w-72 h-72 bg-orange-300/20 blur-3xl rounded-full"></div>
+            <div
+                className="absolute left-0 rounded-full  top-20 w-72 h-72 bg-orange-200/30 blur-3xl"
+            ></div>
 
-            <div className="absolute bottom-20 right-10 w-72 h-72 bg-sky-200/20 blur-3xl rounded-full"></div>
+            <div
+                className="absolute right-0 rounded-full  bottom-10 w-72 h-72 bg-sky-200/30 blur-3xl"
+            ></div>
 
-            <div className="max-w-7xl mx-auto relative z-10">
+            {/* CONTENT */}
 
-                <SectionTitle
-                    title="My Technical Skills"
-                    subtitle="My Skills"
-                />
+            <div className="relative z-10 w-full">
 
-                {/* SKILLS CONTAINER */}
+                {/* TITLE */}
 
-                <div className="bg-white/80 backdrop-blur-xl border border-orange-100 rounded-[40px] p-8 md:p-14 shadow-2xl shadow-orange-100/40">
+                <div className="px-4 mx-auto max-w-7xl">
 
-                    <div className="grid lg:grid-cols-2 gap-14">
+                    <SectionTitle
+                        title="My Technical Skills"
+                        subtitle="Skills & Technologies"
+                    />
 
-                        {/* LEFT */}
+                </div>
 
-                        <div className="space-y-10">
+                {/* FULL WIDTH CAROUSEL */}
 
-                            {skillsLeft.map((skill, index) => (
+                <div
+                    className="relative w-screen mt-16 overflow-hidden -translate-x-1/2  left-1/2"
+                >
 
-                                <div
-                                    key={index}
-                                    className="group"
-                                >
+                    {/* LEFT FADE */}
 
-                                    {/* TOP */}
+                    <div
+                        className="absolute top-0 left-0 z-20 w-16 h-full  sm:w-24 bg-gradient-to-r from-orange-50 to-transparent"
+                    ></div>
 
-                                    <div className="flex items-center justify-between mb-4">
+                    {/* RIGHT FADE */}
 
-                                        <div className="flex items-center gap-4">
+                    <div
+                        className="absolute top-0 right-0 z-20 w-16 h-full  sm:w-24 bg-gradient-to-l from-sky-50 to-transparent"
+                    ></div>
 
-                                            {/* ICON */}
+                    {/* TRACK */}
 
-                                            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-100 to-yellow-100 border border-orange-200 flex items-center justify-center text-orange-500 text-2xl shadow-md group-hover:scale-110 transition duration-300">
+                    <div
+                        className="flex gap-5 px-4  carousel sm:gap-6 w-max"
+                    >
 
-                                                {skill.icon}
+                        {[...skills, ...skills].map((skill, index) => (
 
-                                            </div>
+                            <div
+                                key={index}
+                                className="
+                                min-w-[110px]
+                                sm:min-w-[140px]
+                                md:min-w-[170px]
 
-                                            {/* NAME */}
+                                h-[110px]
+                                sm:h-[140px]
+                                md:h-[170px]
 
-                                            <h3 className="text-2xl font-semibold text-slate-700">
+                                rounded-[28px]
 
-                                                {skill.name}
+                                bg-white/80
+                                backdrop-blur-xl
 
-                                            </h3>
+                                border
+                                border-orange-100
 
-                                        </div>
+                                shadow-xl
+                                shadow-orange-100/20
 
-                                        {/* PERCENTAGE */}
+                                flex
+                                items-center
+                                justify-center
 
-                                        <span className="text-xl font-bold text-orange-500">
+                                transition-all
+                                duration-500
 
-                                            {skill.percentage}%
+                                hover:-translate-y-3
+                                hover:scale-105
 
-                                        </span>
+                                hover:shadow-2xl
+                                hover:shadow-orange-200/40
+                                "
+                            >
 
-                                    </div>
+                                <img
+                                    src={skill}
+                                    alt="skill"
+                                    className="
+                                    w-[50px]
+                                    h-[50px]
 
-                                    {/* PROGRESS BAR */}
+                                    sm:w-[70px]
+                                    sm:h-[70px]
 
-                                    <div className="w-full h-4 bg-orange-100 rounded-full overflow-hidden">
+                                    md:w-[90px]
+                                    md:h-[90px]
 
-                                        <motion.div
-                                            initial={{ width: 0 }}
-                                            whileInView={{
-                                                width: `${skill.percentage}%`,
-                                            }}
-                                            transition={{
-                                                duration: 1.5,
-                                                ease: "easeOut",
-                                            }}
-                                            viewport={{ once: true }}
-                                            className="h-full bg-[#FDBA74] rounded-full shadow-md shadow-[0_0_20px_rgba(251,186,116,0.5)]"
-                                        />
+                                    object-contain
 
-                                    </div>
+                                    transition-all
+                                    duration-500
 
-                                </div>
+                                    hover:scale-110
+                                    "
+                                />
 
-                            ))}
+                            </div>
 
-                        </div>
-
-                        {/* RIGHT */}
-
-                        <div className="space-y-10">
-
-                            {skillsRight.map((skill, index) => (
-
-                                <div
-                                    key={index}
-                                    className="group"
-                                >
-
-                                    {/* TOP */}
-
-                                    <div className="flex items-center justify-between mb-4">
-
-                                        <div className="flex items-center gap-4">
-
-                                            {/* ICON */}
-
-                                            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-100 to-yellow-100 border border-orange-200 flex items-center justify-center text-orange-500 text-2xl shadow-md group-hover:scale-110 transition duration-300">
-
-                                                {skill.icon}
-
-                                            </div>
-
-                                            {/* NAME */}
-
-                                            <h3 className="text-2xl font-semibold text-slate-700">
-
-                                                {skill.name}
-
-                                            </h3>
-
-                                        </div>
-
-                                        {/* PERCENTAGE */}
-
-                                        <span className="text-xl font-bold text-orange-500">
-
-                                            {skill.percentage}%
-
-                                        </span>
-
-                                    </div>
-
-                                    {/* PROGRESS BAR */}
-
-                                    <div className="w-full h-4 bg-orange-100 rounded-full overflow-hidden">
-
-                                        <motion.div
-                                            initial={{ width: 0 }}
-                                            whileInView={{
-                                                width: `${skill.percentage}%`,
-                                            }}
-                                            transition={{
-                                                duration: 1.5,
-                                                ease: "easeOut",
-                                            }}
-                                            viewport={{ once: true }}
-                                            className="h-full bg-[#FDBA74] rounded-full shadow-md shadow-[0_0_20px_rgba(251,186,116,0.5)]"
-                                        />
-
-                                    </div>
-
-                                </div>
-
-                            ))}
-
-                        </div>
+                        ))}
 
                     </div>
 
                 </div>
 
             </div>
+
+            {/* ANIMATION */}
+
+            <style jsx>{`
+
+                .carousel {
+                    animation: scroll 30s linear infinite;
+                }
+
+                .carousel:hover {
+                    animation-play-state: paused;
+                }
+
+                @keyframes scroll {
+
+                    from {
+                        transform: translateX(0);
+                    }
+
+                    to {
+                        transform: translateX(-50%);
+                    }
+                }
+
+            `}</style>
 
         </section>
     );
