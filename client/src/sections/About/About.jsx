@@ -8,23 +8,23 @@ function About() {
 
     <section
       id="about"
-      className="py-28 px-6 bg-gradient-to-b from-white via-orange-50/40 to-sky-50/40 relative overflow-hidden"
+      className="relative px-6 overflow-hidden py-28 bg-gradient-to-b from-white via-orange-50/40 to-sky-50/40"
     >
 
       {/* BACKGROUND GLOW */}
 
-      <div className="absolute top-10 left-10 w-72 h-72 bg-orange-200/30 blur-3xl rounded-full"></div>
+      <div className="absolute rounded-full top-10 left-10 w-72 h-72 bg-orange-200/30 blur-3xl"></div>
 
-      <div className="absolute bottom-10 right-10 w-72 h-72 bg-sky-200/30 blur-3xl rounded-full"></div>
+      <div className="absolute rounded-full bottom-10 right-10 w-72 h-72 bg-sky-200/30 blur-3xl"></div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="relative z-10 mx-auto max-w-7xl">
 
         <SectionTitle
           title="About Me"
           subtitle="Introduction"
         />
 
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid items-center gap-20 lg:grid-cols-2">
 
           {/* LEFT CONTENT */}
 
@@ -35,14 +35,14 @@ function About() {
             viewport={{ once:true }}
           >
 
-            <h3 className="text-4xl md:text-5xl font-black leading-tight text-slate-800 mb-8">
+            <h3 className="mb-8 text-4xl font-black leading-tight md:text-5xl text-slate-800">
 
               Building scalable backend systems
               with modern full stack technologies.
 
             </h3>
 
-            <p className="text-slate-600 leading-9 text-lg">
+            <p className="text-lg leading-9 text-slate-600">
 
               I completed my B.Tech in Computer Science Engineering
               with a CGPA of <span className="font-bold text-orange-500">9.6</span>.
@@ -61,35 +61,35 @@ function About() {
 
             <div className="flex flex-wrap gap-4 mt-10">
 
-              <span className="px-5 py-3 rounded-full bg-white border border-orange-100 shadow-md text-slate-700 font-medium">
+              <span className="px-5 py-3 font-medium bg-white border border-orange-100 rounded-full shadow-md text-slate-700">
                 Java
               </span>
 
-              <span className="px-5 py-3 rounded-full bg-white border border-orange-100 shadow-md text-slate-700 font-medium">
+              <span className="px-5 py-3 font-medium bg-white border border-orange-100 rounded-full shadow-md text-slate-700">
                 Spring Boot
               </span>
 
-              <span className="px-5 py-3 rounded-full bg-white border border-orange-100 shadow-md text-slate-700 font-medium">
+              <span className="px-5 py-3 font-medium bg-white border border-orange-100 rounded-full shadow-md text-slate-700">
                 Spring Security
               </span>
 
-              <span className="px-5 py-3 rounded-full bg-white border border-orange-100 shadow-md text-slate-700 font-medium">
+              <span className="px-5 py-3 font-medium bg-white border border-orange-100 rounded-full shadow-md text-slate-700">
                 Microservices
               </span>
 
-              <span className="px-5 py-3 rounded-full bg-white border border-orange-100 shadow-md text-slate-700 font-medium">
+              <span className="px-5 py-3 font-medium bg-white border border-orange-100 rounded-full shadow-md text-slate-700">
                 SQL
               </span>
 
-              <span className="px-5 py-3 rounded-full bg-white border border-orange-100 shadow-md text-slate-700 font-medium">
+              <span className="px-5 py-3 font-medium bg-white border border-orange-100 rounded-full shadow-md text-slate-700">
                 PL/SQL
               </span>
-            
-              <span className="px-5 py-3 rounded-full bg-white border border-orange-100 shadow-md text-slate-700 font-medium">
+
+              <span className="px-5 py-3 font-medium bg-white border border-orange-100 rounded-full shadow-md text-slate-700">
                 React
               </span>
 
-              <span className="px-5 py-3 rounded-full bg-white border border-orange-100 shadow-md text-slate-700 font-medium">
+              <span className="px-5 py-3 font-medium bg-white border border-orange-100 rounded-full shadow-md text-slate-700">
                 REST APIs
               </span>
 
@@ -104,18 +104,18 @@ function About() {
             whileInView={{ opacity:1, y:0 }}
             transition={{ duration:0.8 }}
             viewport={{ once:true }}
-            className="grid grid-cols-2 gap-8"
+            className="grid grid-cols-2 gap-5 sm:gap-8"
           >
 
             {/* CARD 1 */}
 
-            <div className="bg-white/80 backdrop-blur-xl border border-orange-100 rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition duration-300">
+            <div className="p-5 overflow-hidden text-center transition duration-300 border border-orange-100 shadow-xl bg-white/80 backdrop-blur-xl rounded-3xl sm:p-8 hover:-translate-y-2">
 
-              <h4 className="text-5xl font-black bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent mb-4">
+              <h4 className="mb-4 text-4xl font-black text-transparent sm:text-5xl bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text">
                 9.6
               </h4>
 
-              <p className="text-slate-600 text-lg font-medium">
+              <p className="text-base font-medium text-slate-600 sm:text-lg">
                 CGPA
               </p>
 
@@ -123,13 +123,13 @@ function About() {
 
             {/* CARD 2 */}
 
-            <div className="bg-white/80 backdrop-blur-xl border border-orange-100 rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition duration-300">
+            <div className="p-5 overflow-hidden text-center transition duration-300 border border-orange-100 shadow-xl bg-white/80 backdrop-blur-xl rounded-3xl sm:p-8 hover:-translate-y-2">
 
-              <h4 className="text-5xl font-black bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent mb-4">
+              <h4 className="mb-4 text-4xl font-black text-transparent sm:text-5xl bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text">
                 3+
               </h4>
 
-              <p className="text-slate-600 text-lg font-medium">
+              <p className="text-base font-medium text-slate-600 sm:text-lg">
                 Projects
               </p>
 
@@ -137,13 +137,13 @@ function About() {
 
             {/* CARD 3 */}
 
-            <div className="bg-white/80 backdrop-blur-xl border border-orange-100 rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition duration-300">
+            <div className="p-5 overflow-hidden text-center transition duration-300 border border-orange-100 shadow-xl bg-white/80 backdrop-blur-xl rounded-3xl sm:p-8 hover:-translate-y-2">
 
-              <h4 className="text-5xl font-black bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent mb-4">
+              <h4 className="mb-4 text-3xl font-black text-transparent break-words sm:text-5xl bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text">
                 Java
               </h4>
 
-              <p className="text-slate-600 text-lg font-medium">
+              <p className="text-base font-medium text-slate-600 sm:text-lg">
                 Backend
               </p>
 
@@ -151,13 +151,13 @@ function About() {
 
             {/* CARD 4 */}
 
-            <div className="bg-white/80 backdrop-blur-xl border border-orange-100 rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition duration-300">
+            <div className="p-5 overflow-hidden text-center transition duration-300 border border-orange-100 shadow-xl bg-white/80 backdrop-blur-xl rounded-3xl sm:p-8 hover:-translate-y-2">
 
-              <h4 className="text-5xl font-black bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent mb-4">
+              <h4 className="mb-4 text-3xl font-black text-transparent break-words sm:text-5xl bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text">
                 MERN
               </h4>
 
-              <p className="text-slate-600 text-lg font-medium">
+              <p className="text-base font-medium text-slate-600 sm:text-lg">
                 Full Stack
               </p>
 
