@@ -76,7 +76,7 @@ function Skills() {
                 {/* FULL WIDTH CAROUSEL */}
 
                 <div
-                    className="relative w-screen mt-16 overflow-hidden -translate-x-1/2  left-1/2"
+                    className="relative w-screen py-6 mt-16 overflow-x-hidden overflow-y-visible -translate-x-1/2  left-1/2"
                 >
 
                     {/* LEFT FADE */}
@@ -128,8 +128,8 @@ function Skills() {
                                 transition-all
                                 duration-500
 
-                                hover:-translate-y-3
-                                hover:scale-105
+                                hover:-translate-y-4
+                                hover:scale-[1.08]
 
                                 hover:shadow-2xl
                                 hover:shadow-orange-200/40
