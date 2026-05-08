@@ -104,14 +104,14 @@ function About() {
             whileInView={{ opacity:1, y:0 }}
             transition={{ duration:0.8 }}
             viewport={{ once:true }}
-            className="grid grid-cols-2 gap-5 sm:gap-8"
+            className="grid grid-cols-2 gap-4 sm:gap-8"
           >
 
             {/* CARD 1 */}
 
-            <div className="p-5 overflow-hidden text-center transition duration-300 border border-orange-100 shadow-xl bg-white/80 backdrop-blur-xl rounded-3xl sm:p-8 hover:-translate-y-2">
+            <div className="p-4 overflow-hidden text-center transition duration-300 border border-orange-100 shadow-xl bg-white/80 backdrop-blur-xl rounded-3xl sm:p-8 hover:-translate-y-2">
 
-              <h4 className="mb-4 text-4xl font-black text-transparent sm:text-5xl bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text">
+              <h4 className="mb-3 text-4xl font-black leading-tight text-transparent sm:text-5xl bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text">
                 9.6
               </h4>
 
@@ -123,9 +123,9 @@ function About() {
 
             {/* CARD 2 */}
 
-            <div className="p-5 overflow-hidden text-center transition duration-300 border border-orange-100 shadow-xl bg-white/80 backdrop-blur-xl rounded-3xl sm:p-8 hover:-translate-y-2">
+            <div className="p-4 overflow-hidden text-center transition duration-300 border border-orange-100 shadow-xl bg-white/80 backdrop-blur-xl rounded-3xl sm:p-8 hover:-translate-y-2">
 
-              <h4 className="mb-4 text-4xl font-black text-transparent sm:text-5xl bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text">
+              <h4 className="mb-3 text-4xl font-black leading-tight text-transparent sm:text-5xl bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text">
                 3+
               </h4>
 
@@ -137,9 +137,9 @@ function About() {
 
             {/* CARD 3 */}
 
-            <div className="p-5 overflow-hidden text-center transition duration-300 border border-orange-100 shadow-xl bg-white/80 backdrop-blur-xl rounded-3xl sm:p-8 hover:-translate-y-2">
+            <div className="p-4 overflow-hidden text-center transition duration-300 border border-orange-100 shadow-xl bg-white/80 backdrop-blur-xl rounded-3xl sm:p-8 hover:-translate-y-2">
 
-              <h4 className="mb-4 text-3xl font-black text-transparent break-words sm:text-5xl bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text">
+              <h4 className="mb-3 text-2xl font-black leading-tight text-transparent sm:text-5xl bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text">
                 Java
               </h4>
 
@@ -151,9 +151,9 @@ function About() {
 
             {/* CARD 4 */}
 
-            <div className="p-5 overflow-hidden text-center transition duration-300 border border-orange-100 shadow-xl bg-white/80 backdrop-blur-xl rounded-3xl sm:p-8 hover:-translate-y-2">
+            <div className="p-4 overflow-hidden text-center transition duration-300 border border-orange-100 shadow-xl bg-white/80 backdrop-blur-xl rounded-3xl sm:p-8 hover:-translate-y-2">
 
-              <h4 className="mb-4 text-3xl font-black text-transparent break-words sm:text-5xl bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text">
+              <h4 className="mb-3 text-2xl font-black leading-tight text-transparent sm:text-5xl bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text">
                 MERN
               </h4>
 

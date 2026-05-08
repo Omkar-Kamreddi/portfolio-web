@@ -5,8 +5,6 @@ import { BrowserRouter } from "react-router-dom";
 
 import { Toaster } from "react-hot-toast";
 
-import { ThemeProvider } from "next-themes";
-
 import App from "./App";
 
 import "./index.css";
