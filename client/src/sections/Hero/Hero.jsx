@@ -93,7 +93,7 @@ function Hero() {
 
                     {/* SOCIAL LINKS */}
 
-                    <div className="flex items-center gap-6 mb-3 mt-14">
+                    <div className="flex items-center gap-6 mt-14">
                         <a
                             href="https://github.com/Omkar-Kamreddi"
                             target="_blank"
